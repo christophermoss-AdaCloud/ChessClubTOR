@@ -34,18 +34,20 @@
             { id: 'p4', name: 'Oleg' }, { id: 'p5', name: 'Ranvir' }, { id: 'p6', name: 'Joel' },
             { id: 'p7', name: 'Deivis' }, { id: 'p8', name: 'Ethan' }, { id: 'p9', name: 'Grady' },
             { id: 'p10', name: 'Rajan' }, { id: 'p11', name: 'Mamon' }, { id: 'p12', name: 'Geaner' },
-            { id: 'p13', name: 'Binyamin' }, { id: 'p14', name: 'Erik' }, { id: 'p15', name: 'Alex' }
+            { id: 'p13', name: 'Binyamin' }, { id: 'p14', name: 'Erik' }, { id: 'p15', name: 'Alex' },
+            { id: 'p16', name: 'Ky' }, { id: 'p17', name: 'Adam' }, { id: 'p18', name: 'Jay' }
         ];
 
         const ROUND_1 = [
-            { id: 'r1_1', white: 'p1', black: 'p9', result: null },
-            { id: 'r1_2', white: 'p2', black: 'p10', result: null },
-            { id: 'r1_3', white: 'p3', black: 'p11', result: null },
-            { id: 'r1_4', white: 'p4', black: 'p12', result: null },
-            { id: 'r1_5', white: 'p5', black: 'p13', result: null },
-            { id: 'r1_6', white: 'p6', black: 'p14', result: null },
-            { id: 'r1_7', white: 'p7', black: 'p15', result: null },
-            { id: 'r1_8', white: 'p8', black: null, result: '1-0', isBye: true } // Ethan gets a bye
+            { id: 'r1_1', white: 'p1', black: 'p10', result: null, isBye: false },
+            { id: 'r1_2', white: 'p2', black: 'p11', result: null, isBye: false },
+            { id: 'r1_3', white: 'p3', black: 'p12', result: null, isBye: false },
+            { id: 'r1_4', white: 'p4', black: 'p13', result: null, isBye: false },
+            { id: 'r1_5', white: 'p5', black: 'p14', result: null, isBye: false },
+            { id: 'r1_6', white: 'p6', black: 'p15', result: null, isBye: false },
+            { id: 'r1_7', white: 'p7', black: 'p16', result: null, isBye: false },
+            { id: 'r1_8', white: 'p8', black: 'p17', result: null, isBye: false },
+            { id: 'r1_9', white: 'p9', black: 'p18', result: null, isBye: false }
         ];
 
         function App() {
@@ -164,7 +166,7 @@
                 <div className="bg-slate-800 rounded-xl shadow-2xl p-6 border border-slate-700">
                     <header className="mb-8">
                         <h1 className="text-3xl font-bold text-white mb-2">🏆 Swiss Chess Tournament</h1>
-                        <p className="text-slate-400">5-Round Swiss System • 15 Players</p>
+                        <p className="text-slate-400">5-Round Swiss System • 18 Players</p>
                     </header>
 
                     {/* Navigation */}
