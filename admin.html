@@ -166,8 +166,7 @@
             
             const exportToCSV = () => {
                 // Header row
-                let csvContent = "Round,MatchID,WhiteID,WhiteName,BlackID,BlackName,Result,IsBye
-";
+                let csvContent = "Round,MatchID,WhiteID,WhiteName,BlackID,BlackName,Result,IsBye\n";
                 
                 rounds.forEach((round, roundIndex) => {
                     round.forEach(match => {
@@ -176,8 +175,7 @@
                         const blackName = match.isBye ? "BYE" : getPlayerName(match.black);
                         const result = match.result || "null";
                         
-                        csvContent += `${roundNum},${match.id},${match.white},${whiteName},${match.black || 'null'},${blackName},${result},${match.isBye}
-`;
+                        csvContent += `${roundNum},${match.id},${match.white},${whiteName},${match.black || 'null'},${blackName},${result},${match.isBye}\n`;
                     });
                 });
 
@@ -428,8 +426,9 @@
             );
         }
 
+        // FIXED: Using React.createElement prevents HTML sanitizers from stripping out the <App /> JSX tag
         const root = ReactDOM.createRoot(document.getElementById('root'));
-        root.render(<App />);
+        root.render(React.createElement(App));
     </script>
 </body>
 </html>
