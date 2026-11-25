@@ -38,14 +38,14 @@
     <script type="text/babel">
         const { useState, useMemo, useRef } = React;
 
-        const INITIAL_PLAYERS = [
-            { id: 'p1', name: 'Presley' }, { id: 'p2', name: 'Samantha' }, { id: 'p3', name: 'Tim' },
-            { id: 'p4', name: 'Oleg' }, { id: 'p5', name: 'Ranvir' }, { id: 'p6', name: 'Joel' },
-            { id: 'p7', name: 'Deivis' }, { id: 'p8', name: 'Ethan' }, { id: 'p9', name: 'Grady' },
-            { id: 'p10', name: 'Rajan' }, { id: 'p11', name: 'Mamon' }, { id: 'p12', name: 'Geaner' },
-            { id: 'p13', name: 'Binyamin' }, { id: 'p14', name: 'Erik' }, { id: 'p15', name: 'Alex' },
-            { id: 'p16', name: 'Ky' }, { id: 'p17', name: 'Adam' }, { id: 'p18', name: 'Jay' }
-        ];
+   const INITIAL_PLAYERS = [
+    { id: 'p14', name: 'Erik' }, { id: 'p1', name: 'Presley' }, { id: 'p6', name: 'Joel' },
+    { id: 'p5', name: 'Ranvir' }, { id: 'p18', name: 'Jay' }, { id: 'p12', name: 'Geaner' },
+    { id: 'p16', name: 'Ky' }, { id: 'p4', name: 'Oleg' }, { id: 'p13', name: 'Binyamin' },
+    { id: 'p7', name: 'Deivis' }, { id: 'p15', name: 'Alex' }, { id: 'p11', name: 'Mamon' },
+    { id: 'p10', name: 'Rajan' }, { id: 'p3', name: 'Tim' }, { id: 'p8', name: 'Ethan' },
+    { id: 'p2', name: 'Samantha' }, { id: 'p9', name: 'Grady' }, { id: 'p17', name: 'Adam' }
+];
 
         const ROUND_1 = [
             { id: 'r1_1', white: 'p1', black: 'p10', result: null, isBye: false },
